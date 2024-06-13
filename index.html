@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GreenEscape </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#estimator">Cost Estimator</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to GreenEscape</h2>
+        <p>Your ultimate destination for landscaping services</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service_list animate">
+            <div class="service">
+                <img src="basic-landscaping.jpg" alt="Basic Landscaping">
+                <h3>Basic Landscaping</h3>
+                <p>
+                    Bring new life to your garden or backyard with our comprehensive Maintenance Landscaping, covering 
+                    all aspects from lawn mowing, trimming, hedges and shaping. 
+                    Our professional team will always maintain and add more greenery in your yard while at the 
+                    same time make it sparkling with gorgeous flowers and other landscape design features which will 
+                    add beauty to your property and give you a spot to hang out gardens to take walks, and relax.
+                </p>
+            </div>
+            <div class="service ">
+                <img src="premium-design.jpg" alt="Premium Design">
+                <h3>Premium Design</h3>
+                <p>
+                    Upgrade your outdoor activities using our Premium Design service. Integrate of creativity and
+                    functionality, creating great yard redesign. For us as a team, we begin concept creation
+                    right up to execution, when we are together as a team, and we craft custom features of ponds, pavilions, outdoor kitchens, 
+                    making your yard as a luxurious retreat which serves to your special preferences and lifestyle.
+                </p>
+            </div>
+        </div>
+    </section>    
+    <section id="estimator">
+        <h2>Project Cost Estimator</h2>
+        <form id="costEstimator">
+            <label for="yardSize">Yard Size (sq ft):</label>
+            <input type="number" id="yardSize" name="yardSize" required>
+
+            <label for="designType">Design Type:</label>
+            <select id="designType" name="designType">
+                <option value="basic">Basic Design</option>
+                <option value="premium">Premium Design</option>
+            </select>
+
+            <button type="button" onclick="calculateCost()">Calculate Cost</button>
+        </form>
+        <p id="estimatedCost">Estimated Cost: $0</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing high-quality landscaping services to enhance your outdoor living space.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, State, Zip</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#estimator">Cost Estimator</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 GreenEscape Services. All rights reserved.
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

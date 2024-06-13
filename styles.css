@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #8CBA80;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+nav{
+    text-align: right;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+section {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 0;
+}
+#services .service {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#services img {
+    height: 17vw;
+    width: 30vw;
+    margin-bottom: 10px;
+    
+}
+.service_list{
+    display: flex;
+}
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer {
+    background-color: #8CBA80;
+    color: #fff;
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section.social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#services {
+    padding: 100px 0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+#service h2{
+    padding-bottom: 15px;
+}
+#estimator {
+    background-color: #9dbeae;
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+
+#estimator h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#costEstimator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#costEstimator label {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 70%;
+}
+
+#costEstimator input[type="number"],
+#costEstimator select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#costEstimator button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#costEstimator button:hover {
+    background-color: #45a049;
+}
+
+#estimatedCost {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contactForm textarea {
+    height: 150px;
+}
+
+#contactForm button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+
+
+@keyframes spin {
+    to {
+      transform: rotateY(5turn);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+      .service img {
+        animation: spin linear both;
+        animation-timeline: scroll();
+      } 
+    }
+  }
+
+/* For Android devices with max width 600px */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }    
+    #estimator {
+        padding: 40px;
+        width: 70%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #costEstimator label {
+        margin-bottom: 10px;
+        text-align: left;
+        margin-right: 55%;
+    }
+    #contactForm {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+    
+    #contactForm input[type="text"],
+    #contactForm input[type="email"],
+    #contactForm textarea {
+        width: calc(100% - 40px); /* Adjust input width to fit smaller screens */
+    }
+    
+    #services img {
+        height: 60vw;
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+    #services .service {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+     
+      .service_list {
+        display: block;
+      }
+      .service {
+        margin-bottom: 20px;
+      }
+    
+}
+
+/* For tablets with width from 601px to 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    #estimator {
+        padding: 40px;
+        width: 80%;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #costEstimator label {
+        margin-bottom: 10px;
+        text-align: left;
+        margin-right: 80%;
+    }
+    
+}
